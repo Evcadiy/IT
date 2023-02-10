@@ -636,13 +636,17 @@ h6 {
     gap: 40px;
   }
 
+  .menu__link:after {
+    display: none;
+  }
+
   .menu__link {
     font-size: 2rem;
   }
 
   .icon-menu {
     display: block;
-    position: relative;
+    position: fixed;
     width: 1.875rem;
     height: 1.125rem;
     z-index: 5;
@@ -694,6 +698,12 @@ h6 {
 
   .main {
     background: none;
+  }
+
+  .main__container {
+    height: 19.875rem;
+    padding-top: 3.125rem;
+    margin-bottom: 6.25rem;
   }
 
   .main__body {
