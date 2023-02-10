@@ -1,7 +1,5 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400,500,600,700,800&display=swap);
-
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap);
 @charset "UTF-8";
-
 * {
   padding: 0px;
   margin: 0px;
@@ -636,17 +634,13 @@ h6 {
     gap: 40px;
   }
 
-  .menu__link:after {
-    display: none;
-  }
-
   .menu__link {
     font-size: 2rem;
   }
 
   .icon-menu {
     display: block;
-    position: fixed;
+    position: relative;
     width: 1.875rem;
     height: 1.125rem;
     z-index: 5;
@@ -827,6 +821,5 @@ h6 {
 .webp .standards__image{ background: url(../img/standards/01.webp) 100% no-repeat; }
 
 @media (max-width: 47.99875em){
-
   .webp .main__body{ background: url(../img/header/01.webp) no-repeat; }
 }
