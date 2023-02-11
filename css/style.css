@@ -1,7 +1,7 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;
 
+500;600;700;800&display=swap);
 @charset "UTF-8";
-
 * {
   padding: 0px;
   margin: 0px;
@@ -257,14 +257,10 @@ h6 {
 }
 
 .no-webp .main{
-  background: url("../img/header/01.jpg") no-repeat; }
-
-.main {
-  background-size: 100%;
-}
+  background: url("../img/header/01.jpg") center/100% no-repeat; }
 
 .main__container {
-  height: 805px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -499,6 +495,12 @@ h6 {
   }
 }
 
+@media (max-width: 120em) {
+  .main__container {
+    height: 40.625rem;
+  }
+}
+
 @media (max-width: 90em) {
   .main__container {
     height: 31.25rem;
@@ -512,12 +514,6 @@ h6 {
 
   .main__title {
     font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 106.25em) {
-  .main__container {
-    height: 40.625rem;
   }
 }
 
@@ -853,6 +849,6 @@ h6 {
   }
 }
 
-.webp .main{ background: url(../img/header/01.webp) no-repeat; }
+.webp .main{ background: url(../img/header/01.webp) center/100% no-repeat; }
 
 .webp .standards__image{ background: url(../img/standards/01.webp) 100% no-repeat; }
