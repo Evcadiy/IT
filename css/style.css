@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap);
 
 @charset "UTF-8";
+
 * {
   padding: 0px;
   margin: 0px;
@@ -252,12 +253,8 @@ h6 {
   display: none;
 }
 
-.no-webp .main{
-  background: url("../img/header/01.jpg") no-repeat; }
-
 .main {
-  background-size: 100%;
-  min-height: 100px;
+  position: relative;
 }
 
 .main__container {
@@ -274,6 +271,7 @@ h6 {
 }
 
 .main__body {
+  z-index: 2;
   text-align: center;
 }
 
@@ -300,6 +298,14 @@ h6 {
   font-weight: 800;
   font-size: 48px;
   line-height: 1.3333333333;
+}
+
+.main__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .service {
@@ -749,6 +755,20 @@ h6 {
     margin: 1.875rem 0rem 0rem 12.5rem;
   }
 
+  .main .-ibg {
+    position: relative;
+  }
+
+  .main .-ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .service {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
@@ -866,8 +886,6 @@ h6 {
     text-decoration: underline;
   }
 }
-
-.webp .main{ background: url(../img/header/01.webp) no-repeat; }
 
 .webp .standards__image{ background: url(../img/standards/01.webp) 100% no-repeat; }
 
